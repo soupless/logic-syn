@@ -1,0 +1,38 @@
+{
+  "name": "logic-syn",
+  "displayName": "Logic",
+  "description": "Syntax highlighting for logical proofs using inference rules.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "publisher": "soupless",
+  "readme": "./README.md",
+  "license": "./LICENSE",
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soupless/logic-syn.git"
+  },
+  "contributes": {
+    "languages": [{
+      "id": "logic",
+      "aliases": ["Logic", "logic"],
+      "extensions": [".logic"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "images/icon-light.png",
+        "dark": "images/icon-dark.png"
+      }
+    }],
+    "grammars": [{
+      "language": "logic",
+      "scopeName": "source.logic",
+      "path": "./syntaxes/logic.tmLanguage.json"
+    }]
+  }
+}
