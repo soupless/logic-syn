@@ -71,7 +71,11 @@
 			"patterns": [
 				{
 					"name": "variable.other.proposition.logic",
-					"match": "\\b([ABCD])\\b"
+					"match": "\\b([ABCDPQRST])\\b"
+				},
+				{
+					"name": "variable.other.variable.logic",
+					"match": "\\b([abcxyz])\\b"
 				}
 			]
 		},
